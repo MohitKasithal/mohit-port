@@ -59,9 +59,11 @@ const Navbar = () => {
       sx={{ background: "transparent", color: "black" }}>
       <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
         <IconButton
-          sx={{ display: { xs: "block", sm: "none" } }}
+          sx={{
+            display: { xs: "block", sm: "none" },
+            color: " rgba(199, 199, 3, 0.836)",
+          }}
           edge="start"
-          color="primary"
           aria-label="menu"
           onClick={toggleDrawer(true)}>
           <MenuIcon />
