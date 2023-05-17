@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Typography } from "@mui/material";
 import Navbar from "./Navbar";
-import Footer from "./Footer";
 import { Box, Container } from "@mui/material";
 
 const Home = () => {
@@ -32,6 +31,7 @@ const Home = () => {
               willChange: "transform",
               overflow: "hidden",
               whiteSpace: "nowrap",
+              color: "blue",
             }}
             animate={{ x: ["0%", "30%"] }}
             transition={{ duration: 5, ease: "easeInOut", repeat: Infinity }}>
@@ -52,7 +52,6 @@ const Home = () => {
             for collaborations or inquiries.
           </Typography>
         </Box>
-        <Footer />
       </Container>
     </Box>
   );

@@ -8,13 +8,14 @@
 body {
   /* font-family: "Foldit", cursive; */
   font-family: "Rubik", sans-serif;
-
+  background-color: rgba(128, 128, 128, 0.755);
   /* font-family: "Orbitron", sans-serif; */
 }
 
 .logo {
   display: inline-block;
   font-size: 25px;
+  color: blue;
 }
 .home {
   /* position: relative; */
@@ -23,4 +24,9 @@ body {
   display: flex;
   justify-content: "center";
   font-family: "Rubik", sans-serif;
+}
+b,
+h3,
+strong {
+  color: blue;
 }
