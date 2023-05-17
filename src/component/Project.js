@@ -59,7 +59,7 @@ const Project = ({ projects }) => {
                       color: "blue",
                       textDecoration: "none",
                     }}>
-                    Vist site
+                    Visit site
                   </Link>
                 </CardContent>
               </Card>
