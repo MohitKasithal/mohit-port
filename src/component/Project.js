@@ -4,8 +4,8 @@ import {
   Card,
   CardContent,
   Box,
-  Container,
   Link,
+  Container,
 } from "@mui/material";
 import Navbar from "./Navbar";
 
@@ -21,6 +21,7 @@ const Project = ({ projects }) => {
           alignItems: "center ",
           marginTop: "35px",
           gap: "10px",
+          height: "100%",
         }}>
         <h3>My Projects</h3>
         <Box
@@ -33,7 +34,12 @@ const Project = ({ projects }) => {
           }}>
           <Box sx={{}}>
             {projects.map((project, index) => (
-              <Card key={index} sx={{ marginBottom: "1rem" }}>
+              <Card
+                key={index}
+                sx={{
+                  marginBottom: "1rem",
+                  border: "solid 2px rgba(199, 199, 3, 0.836)  ",
+                }}>
                 <CardContent>
                   <Typography variant="h4" component="h3">
                     {project.name}

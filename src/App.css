@@ -8,18 +8,23 @@
 body {
   /* font-family: "Foldit", cursive; */
   font-family: "Rubik", sans-serif;
-  background-color: rgba(128, 128, 128, 0.755);
   /* font-family: "Orbitron", sans-serif; */
+  background-image: url("./back2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  color: white;
 }
 
 .logo {
   display: inline-block;
   font-size: 25px;
-  color: blue;
+  color: rgba(199, 199, 3, 0.836);
 }
 .home {
   /* position: relative; */
-  margin-top: 100px;
+  height: 90vh;
   padding-left: 20px;
   display: flex;
   justify-content: "center";
@@ -28,5 +33,5 @@ body {
 b,
 h3,
 strong {
-  color: blue;
+  color: rgba(199, 199, 3, 0.836);
 }

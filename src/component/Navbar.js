@@ -7,17 +7,17 @@ import {
   IconButton,
   Drawer,
   List,
-  Link,
   ListItem,
   ListItemText,
   Popover,
+  Link,
   Box,
 } from "@mui/material";
-
+import { Link as Link2 } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import PhoneIcon from "@mui/icons-material/Phone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailIcon from "@mui/icons-material/Email";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const Navbar = () => {
@@ -85,12 +85,18 @@ const Navbar = () => {
           {/* Menu Items */}
           {menuItems.map((item, i) => (
             <>
-              <Button key={i} color="inherit" href={item.link}>
+              <Button
+                key={i}
+                sx={{ color: "rgba(199, 199, 3, 0.836)" }}
+                component={Link2}
+                to={item.link}>
                 {item.label}
               </Button>
             </>
           ))}
-          <Button color="inherit" onClick={handleContactClick}>
+          <Button
+            sx={{ color: "rgba(199, 199, 3, 0.836)" }}
+            onClick={handleContactClick}>
             Contact me
           </Button>
         </List>
@@ -102,10 +108,10 @@ const Navbar = () => {
           {/* Drawer Items */}
           {menuItems.map((item, i) => (
             <ListItem
-              button
               sx={{ textAlign: "center" }}
-              key={item.label}
-              href={item.link}>
+              key={i}
+              component={Link2}
+              to={item.link}>
               <ListItemText primary={item.label} />
             </ListItem>
           ))}
@@ -135,19 +141,23 @@ const Navbar = () => {
               p: "5px",
             }}>
             <Link
+              sx={{ color: "#0A66C2" }}
               href="https://www.linkedin.com/in/mohitsaini80"
               target="_blank"
               rel="noopener noreferrer">
               <LinkedInIcon />
             </Link>
             <Link
+              sx={{ color: "#171515" }}
               href="https://github.com/MohitKasithal"
               target="_blank"
               rel="noopener noreferrer">
               <GitHubIcon />
             </Link>
-            <Link href="mailto:mohitkasithal80@gmail.com">
-              <EmailIcon />
+            <Link
+              sx={{ color: " #BB001B" }}
+              href="mailto:mohitkasithal80@gmail.com">
+              <EmailOutlinedIcon />
             </Link>
             <IconButton color="primary" aria-label="Call" onClick={handleCall}>
               <PhoneIcon />
