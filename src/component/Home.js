@@ -18,6 +18,12 @@ const Home = () => {
         }}>
         <Container className="home" sx={{ width: { sm: "100%", md: "65%" } }}>
           <Box>
+            <Typography
+              variant="h4"
+              sx={{ color: "rgb(248 213 3)", fontWeight: "600" }}>
+              {" "}
+              Hi,
+            </Typography>
             <motion.div
               style={{
                 marginBottom: "10px",
@@ -26,11 +32,15 @@ const Home = () => {
                 willChange: "transform",
                 overflow: "hidden",
                 whiteSpace: "nowrap",
-                color: "rgba(199, 199, 3, 0.836)",
               }}
               animate={{ x: ["0%", "30%"] }}
               transition={{ duration: 5, ease: "easeInOut", repeat: Infinity }}>
-              <Typography variant="h4"> Welcome...</Typography>
+              <Typography
+                variant="h4"
+                sx={{ color: "rgb(248 213 3)", fontWeight: "600" }}>
+                {" "}
+                Welcome...
+              </Typography>
             </motion.div>
             <hr style={{ marginBottom: "10px" }} />
             <Typography variant={{ sm: "p", md: "h5" }}>
@@ -51,6 +61,8 @@ const Home = () => {
         <Box
           sx={{
             width: { sm: "25%", md: "35%" },
+            // display: "flex",
+
             display: { xs: "none", sm: "none", md: "flex" },
             justifyContent: "center",
           }}>
@@ -58,7 +70,7 @@ const Home = () => {
             src="./127422.jpg"
             alt=" "
             style={{
-              border: "solid 3px rgba(199, 199, 3, 0.836)",
+              border: "solid 3px rgb(248 213 3)",
               width: "300px",
               height: "300px",
               borderRadius: "25%",

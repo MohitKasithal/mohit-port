@@ -20,10 +20,10 @@ body {
 .logo {
   display: inline-block;
   font-size: 25px;
-  color: rgba(199, 199, 3, 0.836);
+  color: rgba(248, 211, 3, 0.87);
 }
 .home {
-  /* position: relative; */
+  position: relative;
   height: 90vh;
   padding-left: 20px;
   display: flex;
@@ -33,5 +33,5 @@ body {
 b,
 h3,
 strong {
-  color: rgba(199, 199, 3, 0.836);
+  color: rgba(248, 211, 3, 0.87);
 }

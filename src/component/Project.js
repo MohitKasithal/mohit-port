@@ -38,7 +38,8 @@ const Project = ({ projects }) => {
                 key={index}
                 sx={{
                   marginBottom: "1rem",
-                  border: "solid 2px rgba(199, 199, 3, 0.836)  ",
+
+                  border: "solid 2px  rgb(248 213 3)  ",
                 }}>
                 <CardContent>
                   <Typography variant="h4" component="h3">
@@ -47,20 +48,24 @@ const Project = ({ projects }) => {
                   <Typography variant="body1" component="p">
                     {project.description}
                   </Typography>
-                  <Link
-                    href={project.link}
-                    target="_blank"
-                    sx={{
-                      fontWeight: "600",
-                      fontSize: "16px",
-                      marginTop: "15px",
-                      display: "block",
-                      textAlign: "end",
-                      color: "blue",
-                      textDecoration: "none",
-                    }}>
-                    Visit site
-                  </Link>
+                  <Box sx={{ display: "block", textAlign: "end" }}>
+                    <Link
+                      href={project.link}
+                      target="_blank"
+                      sx={{
+                        fontWeight: "600",
+                        fontSize: "16px",
+                        marginTop: "15px",
+                        border: "solid 2px rgb(248 213 3) ",
+                        borderRadius: "10px",
+                        cursor: "pointer",
+                        padding: "5px",
+                        color: "rgb(248 213 3)",
+                        textDecoration: "none",
+                      }}>
+                      Visit site
+                    </Link>
+                  </Box>
                 </CardContent>
               </Card>
             ))}

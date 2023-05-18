@@ -54,14 +54,16 @@ const Navbar = () => {
   const contactPopoverId = isContactOpen ? "contact-popover" : undefined;
 
   return (
-    <AppBar
-      position="static"
-      sx={{ background: "transparent", color: "black" }}>
-      <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+    <AppBar position="static" sx={{ background: "transparent" }}>
+      <Toolbar
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+        }}>
         <IconButton
           sx={{
             display: { xs: "block", sm: "none" },
-            color: " rgba(199, 199, 3, 0.836)",
+            color: " rgb(199 199 3)",
           }}
           edge="start"
           aria-label="menu"
@@ -80,8 +82,6 @@ const Navbar = () => {
             display: { xs: "none", sm: "flex" },
             flexDirection: "row",
             justifyContent: "space-between",
-            alignItems: "center",
-            color: "blue",
             fontWeight: "bold",
           }}>
           {/* Menu Items */}
@@ -89,37 +89,45 @@ const Navbar = () => {
             <>
               <Button
                 key={i}
-                sx={{ color: "rgba(199, 199, 3, 0.836)" }}
+                sx={{ color: "rgb(248 213 3)" }}
                 component={Link2}
                 to={item.link}>
                 {item.label}
               </Button>
             </>
           ))}
-          <Button
-            sx={{ color: "rgba(199, 199, 3, 0.836)" }}
-            onClick={handleContactClick}>
+          <Button sx={{ color: "rgb(248 213 3)" }} onClick={handleContactClick}>
             Contact me
           </Button>
         </List>
+
         <Drawer
-          sx={{ display: { xs: "block", sm: "none" } }}
+          sx={{
+            display: { xs: "block", sm: "none" },
+          }}
           anchor="left"
           open={open}
           onClose={toggleDrawer(false)}>
           {/* Drawer Items */}
-          {menuItems.map((item, i) => (
-            <ListItem
-              sx={{ textAlign: "center" }}
-              key={i}
-              component={Link2}
-              to={item.link}>
-              <ListItemText primary={item.label} />
-            </ListItem>
-          ))}
-          <Button color="inherit" onClick={handleContactClick}>
-            Contact me
-          </Button>
+          <Box sx={{ height: "100%", backgroundColor: "#000000d1 " }}>
+            {menuItems.map((item, i) => (
+              <ListItem
+                sx={{
+                  textAlign: "center",
+                  color: "rgb(248 213 3)",
+                }}
+                key={i}
+                component={Link2}
+                to={item.link}>
+                <ListItemText primary={item.label} />
+              </ListItem>
+            ))}
+            <Button
+              sx={{ color: "rgb(248 213 3)" }}
+              onClick={handleContactClick}>
+              Contact me
+            </Button>
+          </Box>
         </Drawer>
 
         <Popover
@@ -139,8 +147,11 @@ const Navbar = () => {
             sx={{
               display: "flex",
               alignItems: "center",
+              justifyContent: "center",
               gap: "10px",
-              p: "5px",
+              p: "15px",
+              height: "60px",
+              backgroundColor: "#000000d1 !important",
             }}>
             <Link
               sx={{ color: "#0A66C2" }}
@@ -150,7 +161,7 @@ const Navbar = () => {
               <LinkedInIcon />
             </Link>
             <Link
-              sx={{ color: "#171515" }}
+              sx={{ color: "#fff" }}
               href="https://github.com/MohitKasithal"
               target="_blank"
               rel="noopener noreferrer">
