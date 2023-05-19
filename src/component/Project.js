@@ -38,8 +38,12 @@ const Project = ({ projects }) => {
                 key={index}
                 sx={{
                   marginBottom: "1rem",
-
-                  border: "solid 2px  rgb(248 213 3)  ",
+                  backgroundImage: `${project.backlinear}, url(${project.img})`,
+                  backgroundRepeat: "no-repeat",
+                  backgroundPosition: "center",
+                  backgroundSize: "cover",
+                  border: "solid 2px rgb(248 213 3)",
+                  color: `${project.color}`,
                 }}>
                 <CardContent>
                   <Typography variant="h4" component="h3">
@@ -71,6 +75,9 @@ const Project = ({ projects }) => {
             ))}
           </Box>
         </Box>
+        <Typography variant="body1" component="p" sx={{ textAlign: "center" }}>
+          Visit my GITHUB account to explore more
+        </Typography>
       </Container>
     </>
   );
