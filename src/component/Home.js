@@ -24,24 +24,14 @@ const Home = () => {
               {" "}
               Hi,
             </Typography>
-            <motion.div
-              style={{
-                marginBottom: "10px",
-                display: "inline-block",
-                position: "relative",
-                willChange: "transform",
-                overflow: "hidden",
-                whiteSpace: "nowrap",
-              }}
-              animate={{ x: ["0%", "30%"] }}
-              transition={{ duration: 5, ease: "easeInOut", repeat: Infinity }}>
-              <Typography
-                variant="h4"
-                sx={{ color: "rgb(248 213 3)", fontWeight: "600" }}>
-                {" "}
-                Welcome...
-              </Typography>
-            </motion.div>
+
+            <Typography
+              variant="h4"
+              sx={{ color: "rgb(248 213 3)", fontWeight: "600" }}>
+              {" "}
+              Welcome...
+            </Typography>
+
             <hr style={{ marginBottom: "10px" }} />
             <Typography variant={{ sm: "p", md: "h5" }}>
               Hello, I am <strong>Mohit</strong>. I am a developer specializing
