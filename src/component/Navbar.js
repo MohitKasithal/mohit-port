@@ -73,8 +73,10 @@ const Navbar = () => {
         <motion.div
           animate={{ rotate: [0, 10, 0] }}
           transition={{ duration: 3, repeat: Infinity }}>
-          <h2 className="logo">&lt; div</h2>
-          <h2 className="logo">/&gt;</h2>
+          <Link2 to={"/"}>
+            <h2 className="logo">&lt; div</h2>
+            <h2 className="logo">/&gt;</h2>
+          </Link2>
         </motion.div>
 
         <List
