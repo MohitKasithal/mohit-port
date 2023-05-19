@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Typography } from "@mui/material";
 import Navbar from "./Navbar";
 import { Box, Container } from "@mui/material";
