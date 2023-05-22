@@ -17,15 +17,15 @@ const App = () => {
       link: "https://weat-her.netlify.app",
       img: `${weather}`,
       color: "#fff",
-      backlinear: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5.5))",
+      backlinear: " linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))",
     },
     {
       name: "Shopping Cart",
       description:
-        "In my shopping cart project, I utilized Bootstrap for an attractive UI, React Router for seamless navigation, and Redux Toolkit for efficient state management. The project featured multiple pages, including product listings, shopping cart view, and checkout. By integrating these technologies, I developed a user-friendly shopping cart application with responsive design and synchronized data updates",
+        "In my shopping cart project, I utilized Bootstrap for an attractive UI, React Router for seamless navigation, and Redux Toolkit for efficient state management. The project featured multiple pages, including product listings, shopping cart view, and checkout. By integrating these technologies, I developed a user-friendly shopping cart application with responsive design and synchronized data updates.using YUP validations for login and register page.",
       link: "https://shoping-cart007.netlify.app",
       color: "#fff",
-      backlinear: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 3.5))",
+      backlinear: "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))",
       img: `${cart}`,
     },
     {
@@ -35,7 +35,7 @@ const App = () => {
       link: "https://personal-blog007.netlify.app",
       img: `${blog}`,
       color: "#fff",
-      backlinear: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 5.5))",
+      backlinear: " linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))",
     },
     {
       name: "ONDay Boutique Studio",
@@ -43,7 +43,7 @@ const App = () => {
         "In my boutique website project, I created a fully responsive webpage using React Router for seamless navigation between various components. The website featured multiple components that showcased different sections, such as product listings . I incorporated animations to enhance the user experience and added custom JSON data to populate the website with product information. Through this project, I demonstrated my proficiency in creating visually appealing and interactive websites suitable for freelancing.",
       link: "https://ondayboutique.netlify.app",
       color: "#fff",
-      backlinear: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 3.5))",
+      backlinear: " linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7))",
       img: `${onday}`,
     },
   ];

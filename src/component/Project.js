@@ -37,6 +37,10 @@ const Project = ({ projects }) => {
               <Card
                 key={index}
                 sx={{
+                  display: "flex",
+
+                  justifyContent: "center",
+                  alignItems: "center ",
                   marginBottom: "1rem",
                   backgroundImage: `${project.backlinear}, url(${project.img})`,
                   backgroundRepeat: "no-repeat",
@@ -44,6 +48,7 @@ const Project = ({ projects }) => {
                   backgroundSize: "cover",
                   border: "solid 2px rgb(248 213 3)",
                   color: `${project.color}`,
+                  height: { xs: "auto", sm: "350px" },
                 }}>
                 <CardContent>
                   <Typography variant="h4" component="h3">
@@ -52,14 +57,19 @@ const Project = ({ projects }) => {
                   <Typography variant="body1" component="p">
                     {project.description}
                   </Typography>
-                  <Box sx={{ display: "block", textAlign: "end" }}>
+                  <Box
+                    sx={{
+                      display: "block",
+                      textAlign: "end",
+                      marginTop: "25px",
+                    }}>
                     <Link
                       href={project.link}
                       target="_blank"
                       sx={{
                         fontWeight: "600",
                         fontSize: "16px",
-                        marginTop: "15px",
+
                         border: "solid 2px rgb(248 213 3) ",
                         borderRadius: "10px",
                         cursor: "pointer",
