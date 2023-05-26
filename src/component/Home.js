@@ -1,9 +1,15 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Button, Typography } from "@mui/material";
 import Navbar from "./Navbar";
 import { Box, Container } from "@mui/material";
+import { saveAs } from "file-saver";
+import resumePdf from "../images/mohit-resume.pdf";
 
 const Home = () => {
+  const handleDownload = () => {
+    saveAs(`${resumePdf}`, "mohit-resume.pdf");
+  };
+
   return (
     <>
       <Navbar />
@@ -46,6 +52,16 @@ const Home = () => {
               me for collaborations or inquiries.
             </Typography>
           </Box>
+          <Button
+            sx={{
+              background: "rgb(248 213 3)",
+              color: "#333",
+              fontWeight: "600",
+              mt: "10px",
+            }}
+            onClick={handleDownload}>
+            Resume
+          </Button>
         </Container>
         <Box
           sx={{
